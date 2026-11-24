@@ -1,38 +1,1199 @@
-# Privacy Policy for Mak Deep Clean
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Mak Deep Clean</title>
+  <meta name="description" content="Official Privacy Policy for Mak Deep Clean (com.mak.deepclean). Learn how local file processing, Android permissions, Google AdMob advertising, and Google UMP consent work." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#071123" />
+  <meta property="og:title" content="Privacy Policy — Mak Deep Clean" />
+  <meta property="og:description" content="Privacy Policy for Mak Deep Clean (com.mak.deepclean): local on-device file processing, transparent Google AdMob advertising, and Google UMP consent controls." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root {
+      --bg: #050c19;
+      --bg-accent-1: rgba(37, 99, 235, 0.22);
+      --bg-accent-2: rgba(56, 189, 248, 0.14);
+      --surface: #0b162b;
+      --surface-elevated: #10203d;
+      --surface-soft: rgba(16, 32, 61, 0.65);
+      --border: rgba(148, 184, 240, 0.16);
+      --border-strong: rgba(96, 165, 250, 0.34);
+      --text: #f1f5f9;
+      --text-secondary: #c3d2e8;
+      --text-muted: #8ea4c7;
+      --accent: #3b82f6;
+      --accent-bright: #60a5fa;
+      --accent-cyan: #38bdf8;
+      --accent-soft: rgba(59, 130, 246, 0.14);
+      --code-bg: rgba(15, 23, 42, 0.85);
+      --code-text: #93c5fd;
+      --warn-bg: rgba(245, 158, 11, 0.12);
+      --warn-border: rgba(251, 191, 36, 0.38);
+      --warn-text: #fde68a;
+      --shadow: 0 18px 45px rgba(2, 6, 23, 0.45);
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --radius-sm: 10px;
+      --header-height: 68px;
+    }
 
-**Last Updated:** November 24, 2026  
-**Package Name:** `com.mak.deepclean`
+    html[data-theme="light"] {
+      --bg: #f3f7fd;
+      --bg-accent-1: rgba(37, 99, 235, 0.10);
+      --bg-accent-2: rgba(14, 165, 233, 0.08);
+      --surface: #ffffff;
+      --surface-elevated: #f8fbff;
+      --surface-soft: rgba(255, 255, 255, 0.85);
+      --border: rgba(15, 23, 42, 0.10);
+      --border-strong: rgba(37, 99, 235, 0.30);
+      --text: #0f172a;
+      --text-secondary: #334155;
+      --text-muted: #5b6b82;
+      --accent: #1d4ed8;
+      --accent-bright: #2563eb;
+      --accent-cyan: #0284c7;
+      --accent-soft: rgba(37, 99, 235, 0.09);
+      --code-bg: #eef4ff;
+      --code-text: #1e40af;
+      --warn-bg: #fffbeb;
+      --warn-border: #f59e0b;
+      --warn-text: #92400e;
+      --shadow: 0 12px 32px rgba(15, 23, 42, 0.07);
+    }
 
-## 1. Local File Processing
-Mak Deep Clean scans storage metrics, duplicate photos, videos, audio, files, and app-owned temporary cache **locally on your device**.
-- Your personal photos, videos, audio, documents, and filenames are **never uploaded** to our servers.
-- Local scan caches (such as perceptual/file hash indices) are stored only on your device and are excluded from Android cloud backup and device-to-device transfer.
-- App appearance preferences (theme and light/dark mode) are stored locally using Android DataStore.
-- File deletions require explicit user confirmation through Android system dialogs where applicable.
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
 
-## 2. Advertising (Google AdMob)
-Mak Deep Clean uses **Google AdMob** (Google Mobile Ads SDK) to display Banner and Interstitial advertisements.
-- To serve and measure advertisements, prevent fraud, and support ad personalization (where permitted), Google and its advertising partners may automatically collect and process certain data, including:
-  - Device or other identifiers (such as the Android Advertising ID)
-  - Approximate location (derived from IP address)
-  - App interactions (ad impressions, clicks, and related diagnostics)
-  - Crash logs and performance diagnostics related to the Ads SDK
-- We do not operate our own backend servers and do not collect or store your personal data ourselves.
-- For more information on how Google processes data, see [Google Privacy & Terms — How Google uses information from sites or apps that use our services](https://policies.google.com/technologies/partner-sites).
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
 
-## 3. Consent & Privacy Preferences (GDPR / UK / US Privacy)
-Mak Deep Clean integrates the **Google User Messaging Platform (UMP) SDK**:
-- Where required by applicable law (such as the EEA, UK, or applicable US states), the app requests your consent before loading advertisements.
-- You may choose whether to allow personalized or non-personalized ads according to the options presented in the consent form.
-- Where privacy options are required, you can review or update your choices at any time from **Settings → Ad Privacy Options** inside the app.
-- You can also reset or delete your Android Advertising ID in your device's Android Settings (**Settings → Google → Ads** or **Privacy → Ads**).
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      *, *::before, *::after {
+        transition: none !important;
+      }
+    }
 
-## 4. Permissions Used
-- **Media / Storage Permissions** (`READ_MEDIA_IMAGES`, `READ_MEDIA_VIDEO`, `READ_MEDIA_AUDIO`, and `READ_EXTERNAL_STORAGE` on Android 12 and below): Used solely on-device to find duplicate media and analyze storage usage.
-- **Network Permissions** (`INTERNET`, `ACCESS_NETWORK_STATE`): Used exclusively by Google Mobile Ads SDK and Google UMP SDK to load consent information and display advertisements.
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(ellipse 80% 50% at 15% -10%, var(--bg-accent-1), transparent 60%),
+        radial-gradient(ellipse 65% 45% at 88% 4%, var(--bg-accent-2), transparent 55%);
+      background-attachment: fixed;
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
 
-## 5. Children's Privacy
-Mak Deep Clean is not directed to children under 13 (or the applicable age of digital consent in your jurisdiction), and we do not knowingly collect personal information from children.
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -64px;
+      z-index: 1000;
+      padding: 10px 16px;
+      border-radius: var(--radius-sm);
+      background: var(--accent);
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: none;
+    }
 
-## 6. Changes to This Policy
-We may update this Privacy Policy from time to time to reflect changes in our app or legal requirements. Any updates will be published with a revised "Last Updated" date.
+    .skip-link:focus {
+      top: 12px;
+      outline: 3px solid var(--accent-cyan);
+      outline-offset: 2px;
+    }
+
+    /* Top Bar */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      height: var(--header-height);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background: color-mix(in srgb, var(--bg) 82%, transparent);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .topbar-inner {
+      max-width: 1180px;
+      height: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .brand-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 11px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
+      box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+      flex-shrink: 0;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+    }
+
+    .brand-name {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .brand-sub {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .topbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .theme-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border-strong);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+    }
+
+    .theme-toggle:hover {
+      background: var(--surface-elevated);
+      border-color: var(--accent-bright);
+    }
+
+    .theme-toggle:focus-visible,
+    a:focus-visible,
+    summary:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--accent-cyan);
+      outline-offset: 2px;
+    }
+
+    /* Hero */
+    .hero {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 44px 20px 28px;
+    }
+
+    .hero-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 26px;
+      padding: 40px 36px;
+      background:
+        linear-gradient(145deg, color-mix(in srgb, var(--surface-elevated) 92%, #1d4ed8 8%), var(--surface));
+      border: 1px solid var(--border-strong);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      inset: -40% -15% auto auto;
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.22), transparent 68%);
+      pointer-events: none;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      border: 1px solid var(--border-strong);
+      color: var(--accent-bright);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 2.85rem);
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+    }
+
+    .hero-subtitle {
+      margin: 8px 0 0;
+      font-size: clamp(1.15rem, 2vw, 1.45rem);
+      font-weight: 600;
+      color: var(--accent-cyan);
+    }
+
+    .hero-intro {
+      margin: 18px 0 0;
+      max-width: 74ch;
+      color: var(--text-secondary);
+      font-size: 1.02rem;
+    }
+
+    .meta-grid {
+      margin-top: 26px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .meta-pill {
+      padding: 12px 16px;
+      border-radius: var(--radius-md);
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+    }
+
+    .meta-label {
+      display: block;
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .meta-value {
+      display: block;
+      margin-top: 2px;
+      font-size: 0.94rem;
+      font-weight: 600;
+      color: var(--text);
+      word-break: break-word;
+    }
+
+    /* Main Layout */
+    .layout {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 12px 20px 64px;
+      display: grid;
+      grid-template-columns: 280px minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+    }
+
+    /* Desktop Sidebar Nav */
+    .toc-sidebar {
+      position: sticky;
+      top: calc(var(--header-height) + 20px);
+      max-height: calc(100vh - var(--header-height) - 40px);
+      overflow-y: auto;
+      padding: 20px 16px;
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .toc-title {
+      margin: 0 0 12px 10px;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    .toc-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .toc-link {
+      display: block;
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      line-height: 1.35;
+      border-left: 2px solid transparent;
+      transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+
+    .toc-link:hover {
+      background: var(--accent-soft);
+      color: var(--text);
+    }
+
+    .toc-link.active {
+      background: var(--accent-soft);
+      color: var(--accent-bright);
+      border-left-color: var(--accent-bright);
+      font-weight: 600;
+    }
+
+    /* Mobile Jump Nav */
+    .mobile-toc {
+      display: none;
+      margin-bottom: 18px;
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      border: 1px solid var(--border-strong);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .mobile-toc summary {
+      list-style: none;
+      padding: 15px 18px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--text);
+    }
+
+    .mobile-toc summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .mobile-toc-body {
+      padding: 0 12px 14px;
+      border-top: 1px solid var(--border);
+    }
+
+    /* Policy Cards */
+    .content-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      min-width: 0;
+    }
+
+    .policy-card {
+      scroll-margin-top: calc(var(--header-height) + 20px);
+      padding: 28px 30px;
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .section-num {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.24), rgba(56, 189, 248, 0.16));
+      border: 1px solid var(--border-strong);
+      color: var(--accent-bright);
+      font-size: 0.86rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .policy-card h2 {
+      margin: 0;
+      font-size: 1.32rem;
+      line-height: 1.3;
+      letter-spacing: -0.015em;
+    }
+
+    .policy-card h3 {
+      margin: 20px 0 8px;
+      font-size: 1.02rem;
+      color: var(--text);
+    }
+
+    .policy-card p {
+      margin: 0 0 14px;
+      color: var(--text-secondary);
+    }
+
+    .policy-card p:last-child,
+    .policy-card ul:last-child {
+      margin-bottom: 0;
+    }
+
+    .policy-card ul {
+      margin: 0 0 14px;
+      padding-left: 22px;
+      color: var(--text-secondary);
+    }
+
+    .policy-card li {
+      margin-bottom: 8px;
+    }
+
+    .policy-card li:last-child {
+      margin-bottom: 0;
+    }
+
+    .policy-card strong {
+      color: var(--text);
+    }
+
+    .policy-card a {
+      color: var(--accent-bright);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .policy-card a:hover {
+      color: var(--accent-cyan);
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.86em;
+      padding: 2px 7px;
+      border-radius: 6px;
+      background: var(--code-bg);
+      color: var(--code-text);
+      border: 1px solid var(--border);
+      word-break: break-word;
+    }
+
+    .callout {
+      margin-top: 14px;
+      padding: 15px 18px;
+      border-radius: var(--radius-md);
+      background: var(--accent-soft);
+      border: 1px solid var(--border-strong);
+      color: var(--text-secondary);
+      font-size: 0.94rem;
+    }
+
+    .callout-warning {
+      background: var(--warn-bg);
+      border-color: var(--warn-border);
+      color: var(--warn-text);
+    }
+
+    .callout-warning strong {
+      color: inherit;
+    }
+
+    /* Responsive Tables */
+    .table-wrap {
+      margin: 14px 0;
+      overflow-x: auto;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 520px;
+      font-size: 0.92rem;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--surface-elevated);
+      color: var(--text);
+      font-weight: 700;
+      font-size: 0.84rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    td {
+      color: var(--text-secondary);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      background: color-mix(in srgb, var(--surface) 72%, transparent);
+      padding: 32px 20px 44px;
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .footer-title {
+      color: var(--text);
+      font-weight: 700;
+      margin: 0 0 4px;
+    }
+
+    .footer-meta {
+      margin: 0;
+    }
+
+    .back-to-top {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 15px;
+      border-radius: 999px;
+      background: var(--surface-elevated);
+      border: 1px solid var(--border-strong);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.86rem;
+      font-weight: 600;
+    }
+
+    .back-to-top:hover {
+      border-color: var(--accent-bright);
+      color: var(--accent-bright);
+    }
+
+    @media (max-width: 1023px) {
+      .layout {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .toc-sidebar {
+        display: none;
+      }
+
+      .mobile-toc {
+        display: block;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 24px 14px 18px;
+      }
+
+      .hero-card {
+        padding: 26px 20px;
+        border-radius: 20px;
+      }
+
+      .layout {
+        padding: 8px 14px 48px;
+      }
+
+      .policy-card {
+        padding: 22px 18px;
+        border-radius: 16px;
+      }
+
+      .brand-sub {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to privacy policy content</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top" aria-label="Mak Deep Clean Privacy Policy top">
+        <span class="brand-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Mak Deep Clean</span>
+          <span class="brand-sub">Privacy Policy</span>
+        </span>
+      </a>
+
+      <div class="topbar-actions">
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          type="button"
+          aria-pressed="false"
+          aria-label="Switch color theme"
+        >
+          <span id="themeIcon" aria-hidden="true">☀️</span>
+          <span id="themeLabel">Light Mode</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" aria-labelledby="policy-title">
+    <div class="hero-card">
+      <div class="hero-eyebrow">Official Android Application Policy</div>
+      <h1 id="policy-title">Mak Deep Clean</h1>
+      <p class="hero-subtitle">Privacy Policy</p>
+      <p class="hero-intro">
+        Mak Deep Clean is designed to analyze storage and help clean duplicate media and temporary files
+        <strong>locally on your Android device</strong>. Personal files are never uploaded to our servers.
+        To support the app, we integrate Google AdMob for advertising and the Google User Messaging Platform (UMP)
+        SDK for consent management where required by applicable regional laws.
+      </p>
+
+      <div class="meta-grid" aria-label="Policy metadata">
+        <div class="meta-pill">
+          <span class="meta-label">Package Name</span>
+          <span class="meta-value"><code>com.mak.deepclean</code></span>
+        </div>
+        <div class="meta-pill">
+          <span class="meta-label">Last Updated</span>
+          <span class="meta-value">November 24, 2026</span>
+        </div>
+        <div class="meta-pill">
+          <span class="meta-label">Policy Version</span>
+          <span class="meta-value">Version 1.0</span>
+        </div>
+        <div class="meta-pill">
+          <span class="meta-label">File Processing</span>
+          <span class="meta-value">On-Device Only</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="layout">
+    <!-- Desktop Sticky Navigation -->
+    <aside class="toc-sidebar" aria-label="Privacy policy sections">
+      <p class="toc-title">On This Page</p>
+      <nav>
+        <ul class="toc-list">
+          <li><a class="toc-link" href="#introduction">1. Introduction</a></li>
+          <li><a class="toc-link" href="#information-we-collect">2. Information We Collect</a></li>
+          <li><a class="toc-link" href="#local-file-processing">3. Local File Processing</a></li>
+          <li><a class="toc-link" href="#permissions">4. Permissions</a></li>
+          <li><a class="toc-link" href="#google-admob">5. Google AdMob Advertising</a></li>
+          <li><a class="toc-link" href="#google-ump-consent">6. Google UMP and Consent</a></li>
+          <li><a class="toc-link" href="#data-sharing">7. Data Sharing</a></li>
+          <li><a class="toc-link" href="#internet-network">8. Internet and Network Usage</a></li>
+          <li><a class="toc-link" href="#data-storage-security">9. Data Storage and Security</a></li>
+          <li><a class="toc-link" href="#data-retention-deletion">10. Data Retention and Deletion</a></li>
+          <li><a class="toc-link" href="#childrens-privacy">11. Children's Privacy</a></li>
+          <li><a class="toc-link" href="#your-privacy-rights">12. Your Privacy Rights</a></li>
+          <li><a class="toc-link" href="#third-party-services">13. Third-Party Services</a></li>
+          <li><a class="toc-link" href="#changes-to-policy">14. Changes to This Privacy Policy</a></li>
+          <li><a class="toc-link" href="#contact-information">15. Contact Information</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main id="main-content" class="content-stack">
+      <!-- Mobile Collapsible Navigation -->
+      <details class="mobile-toc" id="mobileToc">
+        <summary>
+          <span>Jump to Section (15 Sections)</span>
+          <span aria-hidden="true">▾</span>
+        </summary>
+        <div class="mobile-toc-body">
+          <nav aria-label="Mobile section navigation">
+            <ul class="toc-list">
+              <li><a class="toc-link" href="#introduction">1. Introduction</a></li>
+              <li><a class="toc-link" href="#information-we-collect">2. Information We Collect</a></li>
+              <li><a class="toc-link" href="#local-file-processing">3. Local File Processing</a></li>
+              <li><a class="toc-link" href="#permissions">4. Permissions</a></li>
+              <li><a class="toc-link" href="#google-admob">5. Google AdMob Advertising</a></li>
+              <li><a class="toc-link" href="#google-ump-consent">6. Google UMP and Consent</a></li>
+              <li><a class="toc-link" href="#data-sharing">7. Data Sharing</a></li>
+              <li><a class="toc-link" href="#internet-network">8. Internet and Network Usage</a></li>
+              <li><a class="toc-link" href="#data-storage-security">9. Data Storage and Security</a></li>
+              <li><a class="toc-link" href="#data-retention-deletion">10. Data Retention and Deletion</a></li>
+              <li><a class="toc-link" href="#childrens-privacy">11. Children's Privacy</a></li>
+              <li><a class="toc-link" href="#your-privacy-rights">12. Your Privacy Rights</a></li>
+              <li><a class="toc-link" href="#third-party-services">13. Third-Party Services</a></li>
+              <li><a class="toc-link" href="#changes-to-policy">14. Changes to This Privacy Policy</a></li>
+              <li><a class="toc-link" href="#contact-information">15. Contact Information</a></li>
+            </ul>
+          </nav>
+        </div>
+      </details>
+
+      <!-- 1. Introduction -->
+      <article class="policy-card" id="introduction">
+        <div class="section-header">
+          <span class="section-num">01</span>
+          <h2>Introduction</h2>
+        </div>
+        <p>
+          This Privacy Policy explains how <strong>Mak Deep Clean</strong> (Android package
+          <code>com.mak.deepclean</code>) handles information when you install and use the application.
+        </p>
+        <p>
+          We believe in clear, accurate disclosures. Mak Deep Clean performs all storage analysis,
+          duplicate detection, and file cleaning locally on your device, while using Google's advertising
+          and consent SDKs to display ads and manage advertising consent preferences.
+        </p>
+      </article>
+
+      <!-- 2. Information We Collect -->
+      <article class="policy-card" id="information-we-collect">
+        <div class="section-header">
+          <span class="section-num">02</span>
+          <h2>Information We Collect</h2>
+        </div>
+        <p>
+          <strong>Data collected directly by us:</strong> We do not require account registration, we do not
+          operate our own backend servers, and we do not collect, transmit, or store your personal data or
+          personal files on our own servers.
+        </p>
+        <p>
+          <strong>Data automatically processed by third-party advertising SDKs:</strong> Because Mak Deep Clean
+          integrates <strong>Google AdMob</strong> (Google Mobile Ads SDK) and the <strong>Google User Messaging
+          Platform (UMP) SDK</strong>, Google and its advertising partners may automatically collect and process
+          certain device, network, and interaction data when ads or consent requests are loaded, subject to your
+          consent choices and applicable laws. See <a href="#google-admob">Section 5</a> and
+          <a href="#google-ump-consent">Section 6</a> for details.
+        </p>
+      </article>
+
+      <!-- 3. Local File Processing -->
+      <article class="policy-card" id="local-file-processing">
+        <div class="section-header">
+          <span class="section-num">03</span>
+          <h2>Local File Processing</h2>
+        </div>
+        <p>
+          Mak Deep Clean scans storage metrics, duplicate photos, videos, audio, files, and app-owned temporary
+          cache <strong>locally on your device</strong>:
+        </p>
+        <ul>
+          <li>Your personal photos, videos, audio, documents, and filenames are <strong>never uploaded</strong> to our servers.</li>
+          <li>Local scan caches (such as perceptual and file hash indices stored in <code>mak_photo_hashes.db</code>) stay on your device only.</li>
+          <li>App appearance preferences (selected theme and light/dark mode) are stored locally using Android DataStore (<code>mak_deep_clean_settings</code>).</li>
+          <li>File deletions require explicit user confirmation through Android system dialogs where applicable.</li>
+        </ul>
+      </article>
+
+      <!-- 4. Permissions -->
+      <article class="policy-card" id="permissions">
+        <div class="section-header">
+          <span class="section-num">04</span>
+          <h2>Permissions</h2>
+        </div>
+        <p>
+          Mak Deep Clean requests only the Android permissions needed for on-device storage features and
+          advertising/consent SDK functionality:
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Permission</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <code>READ_MEDIA_IMAGES</code><br />
+                  <code>READ_MEDIA_VIDEO</code><br />
+                  <code>READ_MEDIA_AUDIO</code>
+                </td>
+                <td>Used on Android 13+ strictly on-device to scan for duplicate photos, videos, and audio files and analyze storage usage.</td>
+              </tr>
+              <tr>
+                <td><code>READ_EXTERNAL_STORAGE</code><br /><small>(Android 12 and below, <code>maxSdkVersion="32"</code>)</small></td>
+                <td>Backward-compatibility permission used strictly on-device to analyze storage and detect duplicate media on Android 8–12.</td>
+              </tr>
+              <tr>
+                <td>
+                  <code>INTERNET</code><br />
+                  <code>ACCESS_NETWORK_STATE</code>
+                </td>
+                <td>Used exclusively by Google Mobile Ads SDK and Google UMP SDK to retrieve consent status/forms and display advertisements.</td>
+              </tr>
+              <tr>
+                <td><code>com.google.android.gms.permission.AD_ID</code><br /><small>(merged by Google Mobile Ads SDK)</small></td>
+                <td>Used by Google Mobile Ads SDK to access the Android Advertising ID for ad delivery, measurement, and fraud prevention where permitted.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- 5. Google AdMob Advertising -->
+      <article class="policy-card" id="google-admob">
+        <div class="section-header">
+          <span class="section-num">05</span>
+          <h2>Google AdMob Advertising</h2>
+        </div>
+        <p>
+          Mak Deep Clean uses <strong>Google AdMob</strong> (Google Mobile Ads SDK) to display
+          <strong>Banner</strong> and <strong>Interstitial</strong> advertisements.
+        </p>
+        <p>
+          To serve and measure advertisements, prevent fraud, and support ad personalization (where permitted),
+          Google and its advertising partners may automatically collect and process certain data, including:
+        </p>
+        <ul>
+          <li><strong>Device or other identifiers:</strong> such as the Android Advertising ID and App Set ID.</li>
+          <li><strong>Approximate location:</strong> derived from your IP address.</li>
+          <li><strong>App interactions:</strong> ad impressions, clicks, and related interaction diagnostics.</li>
+          <li><strong>Crash logs and performance diagnostics:</strong> diagnostic information related to the Ads SDK.</li>
+        </ul>
+        <p>
+          For more information on how Google processes advertising data, please review
+          <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">
+            Google Privacy &amp; Terms — How Google uses information from sites or apps that use our services
+          </a>.
+        </p>
+      </article>
+
+      <!-- 6. Google UMP and Consent -->
+      <article class="policy-card" id="google-ump-consent">
+        <div class="section-header">
+          <span class="section-num">06</span>
+          <h2>Google UMP and Consent</h2>
+        </div>
+        <p>
+          Mak Deep Clean integrates the <strong>Google User Messaging Platform (UMP) SDK</strong> to request
+          and respect user advertising consent preferences:
+        </p>
+        <ul>
+          <li>On startup, the app checks consent requirements through Google UMP. Not every user is shown a consent form; forms are presented when required for your region under applicable privacy frameworks (such as EEA, UK, or applicable US state regulations, once configured in the publisher's AdMob account).</li>
+          <li>Before Google Mobile Ads SDK is initialized or ad requests are made, the app checks whether consent status permits requesting ads.</li>
+          <li>When a consent form is displayed, you can choose whether to allow personalized or non-personalized ads according to the options presented in the form.</li>
+          <li>Where privacy options are required, you can review or update your choices at any time inside the app via <strong>Settings &rarr; Ad Privacy Options</strong>.</li>
+        </ul>
+        <div class="callout">
+          <strong>Important note:</strong> Integrating Google UMP provides technical consent controls within the app,
+          while overall regulatory compliance depends on regional legal requirements and publisher configuration in
+          Google AdMob.
+        </div>
+      </article>
+
+      <!-- 7. Data Sharing -->
+      <article class="policy-card" id="data-sharing">
+        <div class="section-header">
+          <span class="section-num">07</span>
+          <h2>Data Sharing</h2>
+        </div>
+        <p>
+          <strong>Personal files:</strong> Mak Deep Clean does not share, sell, or transmit your personal photos,
+          videos, audio files, documents, or folder contents to us or to any third party.
+        </p>
+        <p>
+          <strong>Advertising SDK data:</strong> When advertisements are requested, data collected automatically
+          by the Google Mobile Ads SDK (described in <a href="#google-admob">Section 5</a>) may be shared with
+          Google and its advertising partners to deliver, measure, and protect advertisements in accordance with
+          your consent settings and Google's policies.
+        </p>
+      </article>
+
+      <!-- 8. Internet and Network Usage -->
+      <article class="policy-card" id="internet-network">
+        <div class="section-header">
+          <span class="section-num">08</span>
+          <h2>Internet and Network Usage</h2>
+        </div>
+        <p>
+          Mak Deep Clean <strong>does use internet access</strong> when available, strictly for:
+        </p>
+        <ul>
+          <li>Checking consent requirements and loading consent forms via the Google UMP SDK.</li>
+          <li>Requesting and displaying Banner and Interstitial advertisements via the Google Mobile Ads SDK.</li>
+        </ul>
+        <p>
+          Core file-scanning, duplicate-detection, and local cleaning features operate on-device and do not upload
+          your files to the internet. If your device is offline at startup, consent errors are handled gracefully
+          without crashing and without bypassing required consent checks.
+        </p>
+      </article>
+
+      <!-- 9. Data Storage and Security -->
+      <article class="policy-card" id="data-storage-security">
+        <div class="section-header">
+          <span class="section-num">09</span>
+          <h2>Data Storage and Security</h2>
+        </div>
+        <ul>
+          <li><strong>Local database exclusions:</strong> Local scan hash caches (<code>mak_photo_hashes.db</code> and related journal/WAL files) are stored inside the app's private storage and explicitly excluded from Android cloud backup and device-to-device transfer.</li>
+          <li><strong>Local preferences:</strong> Theme and appearance mode preferences are stored locally in Android DataStore.</li>
+          <li><strong>Encrypted transit:</strong> Network communications performed by the Google Mobile Ads SDK and Google UMP SDK are encrypted in transit using HTTPS/TLS.</li>
+          <li><strong>Deletion safety:</strong> User media deletions require explicit confirmation through Android's system dialogs where applicable.</li>
+        </ul>
+      </article>
+
+      <!-- 10. Data Retention and Deletion -->
+      <article class="policy-card" id="data-retention-deletion">
+        <div class="section-header">
+          <span class="section-num">10</span>
+          <h2>Data Retention and Deletion</h2>
+        </div>
+        <p>
+          Because we do not operate backend servers or user accounts, we do not retain your personal data on any
+          remote servers.
+        </p>
+        <ul>
+          <li><strong>Local app data:</strong> Local scan caches and appearance preferences remain on your device only until you clear app storage in Android Settings or uninstall Mak Deep Clean.</li>
+          <li><strong>Advertising data:</strong> Data collected by Google Mobile Ads SDK is retained and managed by Google in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</li>
+        </ul>
+      </article>
+
+      <!-- 11. Children's Privacy -->
+      <article class="policy-card" id="childrens-privacy">
+        <div class="section-header">
+          <span class="section-num">11</span>
+          <h2>Children's Privacy</h2>
+        </div>
+        <p>
+          Mak Deep Clean is not directed to children under 13 (or the applicable age of digital consent in your
+          jurisdiction), and we do not knowingly collect personal information from children.
+        </p>
+        <p>
+          If you believe a child has provided personal information in connection with the app, please contact us
+          using the details in <a href="#contact-information">Section 15</a> so we can assist appropriately.
+        </p>
+      </article>
+
+      <!-- 12. Your Privacy Rights -->
+      <article class="policy-card" id="your-privacy-rights">
+        <div class="section-header">
+          <span class="section-num">12</span>
+          <h2>Your Privacy Rights</h2>
+        </div>
+        <p>
+          Depending on your location, you may have rights regarding your personal data and advertising preferences.
+          You can exercise control directly on your device:
+        </p>
+        <ul>
+          <li><strong>Manage ad consent in-app:</strong> Where privacy options are required for your region, open <strong>Settings &rarr; Ad Privacy Options</strong> inside Mak Deep Clean to review or change your consent choices.</li>
+          <li><strong>Reset or delete Advertising ID:</strong> Open your device's Android Settings (<strong>Settings &rarr; Google &rarr; Ads</strong> or <strong>Privacy &rarr; Ads</strong>) to reset or delete your Android Advertising ID.</li>
+          <li><strong>Manage media permissions:</strong> Revoke or adjust storage/media permissions at any time in Android's App Info settings for Mak Deep Clean.</li>
+          <li><strong>Remove local data:</strong> Clear the app's storage or uninstall Mak Deep Clean to remove all locally stored caches and preferences.</li>
+        </ul>
+      </article>
+
+      <!-- 13. Third-Party Services -->
+      <article class="policy-card" id="third-party-services">
+        <div class="section-header">
+          <span class="section-num">13</span>
+          <h2>Third-Party Services</h2>
+        </div>
+        <p>
+          Mak Deep Clean integrates only the following third-party services that communicate over the network:
+        </p>
+        <ul>
+          <li>
+            <strong>Google AdMob (Google Mobile Ads SDK):</strong>
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+            &middot;
+            <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google Uses Partner Data</a>
+          </li>
+          <li>
+            <strong>Google User Messaging Platform (UMP) SDK:</strong>
+            Used to check consent requirements and present Google-managed consent and privacy options forms.
+          </li>
+        </ul>
+        <p>
+          Mak Deep Clean does not include third-party analytics SDKs, crash-reporting trackers, or cloud file-upload services.
+        </p>
+      </article>
+
+      <!-- 14. Changes to This Privacy Policy -->
+      <article class="policy-card" id="changes-to-policy">
+        <div class="section-header">
+          <span class="section-num">14</span>
+          <h2>Changes to This Privacy Policy</h2>
+        </div>
+        <p>
+          We may update this Privacy Policy from time to time to reflect changes in Mak Deep Clean, integrated SDKs,
+          or applicable legal requirements. Any updates will be posted on this page with a revised
+          <strong>"Last Updated"</strong> date at the top of the document.
+        </p>
+      </article>
+
+      <!-- 15. Contact Information -->
+      <article class="policy-card" id="contact-information">
+        <div class="section-header">
+          <span class="section-num">15</span>
+          <h2>Contact Information</h2>
+        </div>
+        <p>
+          If you have any questions or requests regarding this Privacy Policy or Mak Deep Clean, please contact the
+          application publisher:
+        </p>
+        <div class="callout" aria-label="Publisher contact information">
+          <ul style="margin-bottom: 0;">
+            <li><strong>Developer / Publisher Name:</strong> Veyqorin</li>
+            <li><strong>Contact Email:</strong> <a href="mailto:contact.ahmedghabri@gmail.com">contact.ahmedghabri@gmail.com</a></li>
+          </ul>
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-title">Mak Deep Clean</p>
+        <p class="footer-meta">
+          Package <code>com.mak.deepclean</code> &middot; Privacy Policy Version 1.0 &middot; Last Updated: November 24, 2026
+        </p>
+      </div>
+      <a class="back-to-top" href="#top" aria-label="Back to top of page">
+        <span aria-hidden="true">&uarr;</span>
+        <span>Back to top</span>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var toggle = document.getElementById("themeToggle");
+      var icon = document.getElementById("themeIcon");
+      var label = document.getElementById("themeLabel");
+      var storageKey = "mak_deep_clean_policy_theme";
+
+      function applyTheme(theme) {
+        var isLight = theme === "light";
+        root.setAttribute("data-theme", isLight ? "light" : "dark");
+        if (toggle) {
+          toggle.setAttribute("aria-pressed", String(isLight));
+        }
+        if (icon) {
+          icon.textContent = isLight ? "🌙" : "☀️";
+        }
+        if (label) {
+          label.textContent = isLight ? "Dark Mode" : "Light Mode";
+        }
+      }
+
+      var saved = null;
+      try {
+        saved = window.localStorage.getItem(storageKey);
+      } catch (_) {
+        saved = null;
+      }
+
+      if (saved === "light" || saved === "dark") {
+        applyTheme(saved);
+      } else {
+        applyTheme("dark");
+      }
+
+      if (toggle) {
+        toggle.addEventListener("click", function () {
+          var next = root.getAttribute("data-theme") === "light" ? "dark" : "light";
+          applyTheme(next);
+          try {
+            window.localStorage.setItem(storageKey, next);
+          } catch (_) {
+            // Ignore storage errors in restricted contexts
+          }
+        });
+      }
+
+      // Close mobile jump menu when a section link is clicked
+      var mobileToc = document.getElementById("mobileToc");
+      if (mobileToc) {
+        mobileToc.querySelectorAll("a[href^='#']").forEach(function (link) {
+          link.addEventListener("click", function () {
+            mobileToc.removeAttribute("open");
+          });
+        });
+      }
+
+      // Highlight active section in desktop sidebar TOC
+      var sections = document.querySelectorAll("article.policy-card[id]");
+      var sidebarLinks = document.querySelectorAll(".toc-sidebar .toc-link");
+      if ("IntersectionObserver" in window && sections.length && sidebarLinks.length) {
+        var linkMap = {};
+        sidebarLinks.forEach(function (a) {
+          var id = a.getAttribute("href").slice(1);
+          linkMap[id] = a;
+        });
+
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                sidebarLinks.forEach(function (a) {
+                  a.classList.remove("active");
+                });
+                var activeLink = linkMap[entry.target.id];
+                if (activeLink) {
+                  activeLink.classList.add("active");
+                }
+              }
+            });
+          },
+          { rootMargin: "-18% 0px -70% 0px", threshold: 0 }
+        );
+
+        sections.forEach(function (sec) {
+          observer.observe(sec);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
